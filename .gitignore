@@ -1,0 +1,66 @@
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ── Virtual environments ──────────────────────────────────────────────────────
+venv/
+env/
+.venv/
+
+# ── Environment files ─────────────────────────────────────────────────────────
+.env
+!.env.example
+
+# ── Model artifacts (large binary files — use git-lfs or download from Colab) ─
+backend/model_artifacts/*.pt
+backend/model_artifacts/*.bin
+backend/model_artifacts/*.ckpt
+# Keep README
+!backend/model_artifacts/README.md
+
+# ── Logs & Cache ──────────────────────────────────────────────────────────────
+backend/logs/
+backend/cache/predictions.json
+*.log
+
+# ── Node ──────────────────────────────────────────────────────────────────────
+node_modules/
+frontend/dist/
+frontend/.vite/
+
+# ── OS ────────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── IDEs ──────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── pytest ────────────────────────────────────────────────────────────────────
+.pytest_cache/
+htmlcov/
+.coverage
+
+# ── Jupyter ───────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ── Augmented dataset (derived file) ─────────────────────────────────────────
+datasets/drug_interactions_augmented.csv
+
+# Extra env folders
+chemenv/
+backend/chemenv/
+
+# Explicit backend cache
+backend/__pycache__/

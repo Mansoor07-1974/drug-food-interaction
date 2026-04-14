@@ -1,0 +1,12 @@
+{
+  "model_type": "D-MPNN-BinaryClassifier",
+  "n_molecules": 2,
+  "hidden_dim": 300,
+  "n_layers": 3,
+  "dropout": 0.2,
+  "threshold": 0.5,
+  "best_epoch": 57,
+  "best_val_auc": 0.9819,
+  "test_auc": 0.98,
+  "test_accuracy": 0.977
+}

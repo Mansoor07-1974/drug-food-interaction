@@ -1,0 +1,54 @@
+version: "3.9"
+
+services:
+
+  # ── Backend (FastAPI + Chemprop) ───────────────────────────────────────────
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: molguard_backend
+    ports:
+      - "8000:8000"
+    volumes:
+      # Datasets mounted at /datasets (data_loader.py resolves ../datasets from /app)
+      - ./datasets:/datasets:ro
+      # Model artifacts — place full_checkpoint.pt + model_config.json here first
+      - ./backend/model_artifacts:/app/model_artifacts:ro
+      # Persist prediction cache between restarts
+      - molguard_cache:/app/cache
+      # Persist logs
+      - molguard_logs:/app/logs
+    environment:
+      - PYTHONUNBUFFERED=1
+      - MODEL_PATH=model_artifacts/full_checkpoint.pt
+      - PREDICTION_THRESHOLD=0.5
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 25s
+
+  # ── Frontend (React + Nginx) ───────────────────────────────────────────────
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: molguard_frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      backend:
+        condition: service_healthy
+    restart: unless-stopped
+
+# ── Named volumes ──────────────────────────────────────────────────────────────
+volumes:
+  molguard_cache:
+  molguard_logs:
+
+networks:
+  default:
+    name: molguard_network

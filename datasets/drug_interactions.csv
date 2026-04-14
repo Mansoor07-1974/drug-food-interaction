@@ -1,0 +1,37 @@
+drug_name,drug_smiles,harmful_constituent,constituent_smiles,interaction_effect,severity,label
+Warfarin,CC1(C2CC3CC(C2)(CC3C1=O)OC(=O)c1ccccc1)O,Vitamin K,CC1(CCC(=C)C(C1)OC(=O)/C=C/c1ccc(O)cc1)C,Vitamin K antagonizes anticoagulant effect of Warfarin,High,1
+Warfarin,CC1(C2CC3CC(C2)(CC3C1=O)OC(=O)c1ccccc1)O,Grapefruit Furanocoumarin,C1=CC2=C(C=C1OCC3=CC4=CC=CC=C4O3)C=CO2,Inhibits CYP2C9 metabolism increasing Warfarin levels,High,1
+Simvastatin,CCC(C)(C)C(=O)OC1CC(CC2C1(C)CCC3C2CC(=C)C3)OC(=O)CC(CC(=O)O)O,Furanocoumarins,C1=CC2=C(C=C1OCC3=CC4=CC=CC=C4O3)C=CO2,CYP3A4 inhibition raises Simvastatin blood levels causing myopathy,High,1
+Metformin,CN(C)C(=N)NC(=N)N,Ethanol,CCO,Increases lactic acidosis risk with Metformin,High,1
+Metformin,CN(C)C(=N)NC(=N)N,Tyramine,NCCc1ccc(O)cc1,Minimal interaction - blood pressure effect,Low,0
+Atorvastatin,CC(C)c1c(C(=O)Nc2ccccc2)c(-c2ccccc2)c(-c2ccc(F)cc2)n1CCC(O)CC(O)CC(=O)O,Furanocoumarins,C1=CC2=C(C=C1OCC3=CC4=CC=CC=C4O3)C=CO2,CYP3A4 inhibition raises Atorvastatin levels,High,1
+Atorvastatin,CC(C)c1c(C(=O)Nc2ccccc2)c(-c2ccccc2)c(-c2ccc(F)cc2)n1CCC(O)CC(O)CC(=O)O,Calcium,OC([O-])=O.[Ca+2].OC([O-])=O,Calcium reduces Atorvastatin absorption,Moderate,1
+Atorvastatin,CC(C)c1c(C(=O)Nc2ccccc2)c(-c2ccccc2)c(-c2ccc(F)cc2)n1CCC(O)CC(O)CC(=O)O,Ethanol,CCO,Low direct interaction,Low,0
+Ciprofloxacin,O=C(O)c1cn(C2CC2)c2cc(N3CCNCC3)c(F)cc2c1=O,Calcium,OC([O-])=O.[Ca+2].OC([O-])=O,Calcium chelates Ciprofloxacin reducing absorption by 50%,High,1
+Ciprofloxacin,O=C(O)c1cn(C2CC2)c2cc(N3CCNCC3)c(F)cc2c1=O,Caffeine,Cn1cnc2c1c(=O)n(C)c(=O)n2C,Ciprofloxacin inhibits caffeine metabolism causing toxicity,Moderate,1
+Ciprofloxacin,O=C(O)c1cn(C2CC2)c2cc(N3CCNCC3)c(F)cc2c1=O,Lycopene,CC(=C/C=C/C(=C/C=C/C(=C/C=C/C(C)(C)C)C)C)C=CC=C(C)C=CC=C(C)C,No significant interaction,Low,0
+MAOIs (Phenelzine),NNCc1ccccc1,Tyramine,NCCc1ccc(O)cc1,Hypertensive crisis - tyramine not metabolized by MAO,Critical,1
+MAOIs (Phenelzine),NNCc1ccccc1,Tryptophan,N[C@@H](Cc1c[nH]c2ccccc12)C(=O)O,Serotonin syndrome risk,High,1
+MAOIs (Phenelzine),NNCc1ccccc1,Ethanol,CCO,CNS depression and hypertensive risk,High,1
+MAOIs (Phenelzine),NNCc1ccccc1,Caffeine,Cn1cnc2c1c(=O)n(C)c(=O)n2C,Mild stimulant interaction,Low,0
+Tetracycline,OC1=C(O)C2=CC3C(N(C)C)C(O)=C(C(=O)c4c(O)cccc4C3=O)C2(C)C1=O,Calcium,OC([O-])=O.[Ca+2].OC([O-])=O,Calcium chelates Tetracycline preventing absorption,High,1
+Tetracycline,OC1=C(O)C2=CC3C(N(C)C)C(O)=C(C(=O)c4c(O)cccc4C3=O)C2(C)C1=O,Iron,O=S(=O)([O-])O.[Fe+2].O=S(=O)([O-])O,Iron chelates Tetracycline reducing bioavailability,High,1
+Tetracycline,OC1=C(O)C2=CC3C(N(C)C)C(O)=C(C(=O)c4c(O)cccc4C3=O)C2(C)C1=O,Lycopene,CC(=C/C=C/C(=C/C=C/C(=C/C=C/C(C)(C)C)C)C)C=CC=C(C)C=CC=C(C)C,No significant interaction,Low,0
+Aspirin,CC(=O)Oc1ccccc1C(=O)O,Ethanol,CCO,Increases GI bleeding risk,Moderate,1
+Aspirin,CC(=O)Oc1ccccc1C(=O)O,Caffeine,Cn1cnc2c1c(=O)n(C)c(=O)n2C,Enhanced analgesic effect - some formulations combine these,Low,0
+Aspirin,CC(=O)Oc1ccccc1C(=O)O,Vitamin K,CC1(CCC(=C)C(C1)OC(=O)/C=C/c1ccc(O)cc1)C,Antagonistic anticoagulation effects,Moderate,1
+Levothyroxine,N[C@@H](Cc1cc(I)c(Oc2cc(I)c(O)c(I)c2)c(I)c1)C(=O)O,Calcium,OC([O-])=O.[Ca+2].OC([O-])=O,Calcium reduces Levothyroxine absorption,High,1
+Levothyroxine,N[C@@H](Cc1cc(I)c(Oc2cc(I)c(O)c(I)c2)c(I)c1)C(=O)O,Iron,O=S(=O)([O-])O.[Fe+2].O=S(=O)([O-])O,Iron reduces Levothyroxine absorption,High,1
+Levothyroxine,N[C@@H](Cc1cc(I)c(Oc2cc(I)c(O)c(I)c2)c(I)c1)C(=O)O,Caffeine,Cn1cnc2c1c(=O)n(C)c(=O)n2C,Caffeine may reduce absorption if taken together,Moderate,1
+Levothyroxine,N[C@@H](Cc1cc(I)c(Oc2cc(I)c(O)c(I)c2)c(I)c1)C(=O)O,Lycopene,CC(=C/C=C/C(=C/C=C/C(=C/C=C/C(C)(C)C)C)C)C=CC=C(C)C=CC=C(C)C,No significant interaction,Low,0
+Sildenafil,CCCc1nn(C)c2c(=O)[nH]c(-c3cc(S(=O)(=O)N4CCN(C)CC4)ccc3OCC)nc12,Furanocoumarins,C1=CC2=C(C=C1OCC3=CC4=CC=CC=C4O3)C=CO2,CYP3A4 inhibition potentiates Sildenafil effect dangerously,Critical,1
+Sildenafil,CCCc1nn(C)c2c(=O)[nH]c(-c3cc(S(=O)(=O)N4CCN(C)CC4)ccc3OCC)nc12,Ethanol,CCO,Enhanced hypotension risk,Moderate,1
+Sildenafil,CCCc1nn(C)c2c(=O)[nH]c(-c3cc(S(=O)(=O)N4CCN(C)CC4)ccc3OCC)nc12,Vitamin K,CC1(CCC(=C)C(C1)OC(=O)/C=C/c1ccc(O)cc1)C,No significant interaction,Low,0
+Digoxin,O[C@@H]1[C@H](O)C[C@@H](O[C@@H]2CC[C@]3(CO)[C@@H](CC[C@@H]4[C@@H]3CC[C@]3(C)[C@@H](C[C@@H](O)[C@H]43)O[C@@H]3O[C@H](C)[C@@H](O)[C@@H](O)[C@H]3O)C2)O[C@@H]1C,Calcium,OC([O-])=O.[Ca+2].OC([O-])=O,High calcium increases Digoxin toxicity risk,High,1
+Digoxin,O[C@@H]1[C@H](O)C[C@@H](O[C@@H]2CC[C@]3(CO)[C@@H](CC[C@@H]4[C@@H]3CC[C@H](O)[C@]4(C)CC[C@@H](O[C@@H]3O[C@H](C)[C@@H](O)[C@@H](O)[C@H]3O)C)C2)O[C@@H]1C,Tyramine,NCCc1ccc(O)cc1,No significant interaction,Low,0
+Methotrexate,CN(Cc1cnc2nc(N)nc(N)c2n1)c1ccc(C(=O)NC(CCC(=O)O)C(=O)O)cc1,Ethanol,CCO,Increased hepatotoxicity risk,High,1
+Methotrexate,CN(Cc1cnc2nc(N)nc(N)c2n1)c1ccc(C(=O)NC(CCC(=O)O)C(=O)O)cc1,Caffeine,Cn1cnc2c1c(=O)n(C)c(=O)n2C,May reduce Methotrexate efficacy,Moderate,1
+Ibuprofen,CC(C)Cc1ccc(C(C)C(=O)O)cc1,Ethanol,CCO,Increased GI bleeding and kidney damage,Moderate,1
+Ibuprofen,CC(C)Cc1ccc(C(C)C(=O)O)cc1,Calcium,OC([O-])=O.[Ca+2].OC([O-])=O,No significant interaction,Low,0
+Lithium,OC(CC(=O)O)C(=O)O.[Li+],Caffeine,Cn1cnc2c1c(=O)n(C)c(=O)n2C,Caffeine increases Lithium excretion reducing efficacy,Moderate,1
+Lithium,OC(CC(=O)O)C(=O)O.[Li+],Tyramine,NCCc1ccc(O)cc1,No significant interaction,Low,0
