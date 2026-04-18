@@ -121,14 +121,27 @@ async def run_prediction(drug_name: str, food_name: str,
             )
         harmful_entries = []
 
-    # 2. Food constituents
+    # 2. Food constituents (dataset first, PubChem fallback)
     food_constituents = data_loader.get_food_constituents(food_name)
+
     if not food_constituents:
-        raise HTTPException(
+        logger.info(f"'{food_name}' not in dataset — querying PubChem as food fallback")
+
+        food_smiles = await pubchem.get_smiles(food_name)
+
+        if food_smiles:
+            food_constituents = [{
+            "constituent_name": food_name,
+            "constituent_smiles": food_smiles,
+            "constituent_category": "PubChem",
+            "description": f"{food_name} resolved via PubChem fallback"
+            }]
+        else:
+            raise HTTPException(
             status_code=404,
-            detail=(f"Food '{food_name}' not found. "
+            detail=(f"Food '{food_name}' not found in dataset or PubChem. "
                     f"Try: {', '.join(data_loader.list_foods()[:8])}...")
-        )
+            )
 
     # 3. GNN per constituent (with cache)
     results = []
@@ -244,12 +257,23 @@ async def get_drug(name: str):
 
 
 @app.get("/food/{name}")
-def get_food(name: str):
+async def get_food(name: str):
     constituents = data_loader.get_food_constituents(name)
-    if not constituents:
-        raise HTTPException(status_code=404, detail=f"Food '{name}' not found")
-    return {"food_name": name, "constituents": constituents}
 
+    if not constituents:
+        smiles = await pubchem.get_smiles(name)
+
+        if smiles:
+            constituents = [{
+                "constituent_name": name,
+                "constituent_smiles": smiles,
+                "constituent_category": "PubChem",
+                "description": f"{name} resolved via PubChem fallback"
+            }]
+        else:
+            raise HTTPException(status_code=404, detail=f"Food '{name}' not found")
+
+    return {"food_name": name, "constituents": constituents}
 
 @app.get("/drugs")
 def list_drugs():

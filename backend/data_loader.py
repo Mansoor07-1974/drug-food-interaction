@@ -6,7 +6,14 @@ Dataset path resolution (works for both local dev and Docker):
   Docker    : /datasets/            (volume mount)
 """
 
-import os
+"""
+data_loader.py — optimized loader for large CSV datasets (1M+ rows supported)
+
+Works for:
+  Local dev : project_root/datasets/
+  Docker    : /datasets/
+"""
+
 import csv
 import logging
 from collections import defaultdict
@@ -16,75 +23,134 @@ logger = logging.getLogger(__name__)
 
 
 def _resolve_dataset_dir() -> Path:
-    """Find the datasets folder whether running locally or in Docker."""
-    # Docker: /datasets is mounted directly
     docker_path = Path("/datasets")
     if docker_path.exists():
         return docker_path
-    # Local dev: project_root/datasets/
-    local_path = Path(__file__).parent.parent / "datasets"
-    return local_path
+
+    return Path(__file__).parent.parent / "datasets"
 
 
 DATASET_DIR = _resolve_dataset_dir()
-DRUG_CSV    = DATASET_DIR / "drug_interactions.csv"
-FOOD_CSV    = DATASET_DIR / "food_constituents.csv"
+DRUG_CSV = DATASET_DIR / "S3.9292_drug_food_interactions.csv"
+FOOD_CSV = DATASET_DIR / "food_constituents_cleaned.csv"
 
 
 class DataLoader:
     def __init__(self):
         self._drugs: dict[str, dict] = {}
+
+        # food_name -> list of constituents
         self._foods: dict[str, list] = defaultdict(list)
-        # Map lowercase food key → original display name
+
+        # lower food -> display name
         self._food_display: dict[str, str] = {}
 
+    # ==========================================================
+    # PUBLIC LOAD
+    # ==========================================================
     def load(self):
         self._load_drugs()
         self._load_foods()
-        logger.info(f"Loaded {len(self._drugs)} drugs | {len(self._foods)} foods")
 
-    # ── Drug Dataset ──────────────────────────────────────────────────────────
+        logger.info(
+            f"Loaded {len(self._drugs)} drugs | {len(self._foods)} foods"
+        )
+
+    # ==========================================================
+    # DRUG DATASET
+    # ==========================================================
     def _load_drugs(self):
         if not DRUG_CSV.exists():
-            logger.error(f"Drug dataset not found at {DRUG_CSV}")
+            logger.error(f"Drug dataset not found: {DRUG_CSV}")
             return
-        with open(DRUG_CSV, newline="", encoding="utf-8") as f:
-            for row in csv.DictReader(f):
-                key = row["drug_name"].strip().lower()
+
+        with open(DRUG_CSV, newline="", encoding="latin-1") as f:
+            reader = csv.DictReader(f)
+
+            for row in reader:
+                drug_name = row["drug_name"].strip()
+                key = drug_name.lower()
+
                 if key not in self._drugs:
                     self._drugs[key] = {
-                        "drug_name":    row["drug_name"].strip(),
-                        "drug_smiles":  row["drug_smiles"].strip(),
-                        "interactions": [],
+                        "drug_name": drug_name,
+                        "drug_smiles": row["drug_smiles"].strip(),
+                        "interactions": []
                     }
+
                 self._drugs[key]["interactions"].append({
                     "harmful_constituent": row["harmful_constituent"].strip(),
-                    "constituent_smiles":  row["constituent_smiles"].strip(),
-                    "interaction_effect":  row["interaction_effect"].strip(),
-                    "severity":            row["severity"].strip(),
-                    "label":               int(row["label"]),
+                    "constituent_smiles": row["constituent_smiles"].strip(),
+                    "interaction_effect": row["interaction_effect"].strip(),
+                    "severity": row["severity"].strip(),
+                    "label": int(row["label"]),
                 })
-        logger.info(f"  Drug dataset: {len(self._drugs)} unique drugs")
 
-    # ── Food Dataset ──────────────────────────────────────────────────────────
+        logger.info(f"Drug dataset loaded: {len(self._drugs)} unique drugs")
+
+    # ==========================================================
+    # FOOD DATASET (OPTIMIZED FOR HUGE FILES)
+    # Expected columns:
+    # food_name, constituent_name, constituent_smiles
+    #
+    # Optional:
+    # constituent_category, description
+    # ==========================================================
     def _load_foods(self):
         if not FOOD_CSV.exists():
-            logger.error(f"Food dataset not found at {FOOD_CSV}")
+            logger.error(f"Food dataset not found: {FOOD_CSV}")
             return
-        with open(FOOD_CSV, newline="", encoding="utf-8") as f:
-            for row in csv.DictReader(f):
-                display = row["food_name"].strip()
-                key     = display.lower()
-                self._foods[key].append({
-                    "constituent_name":     row["constituent_name"].strip(),
-                    "constituent_smiles":   row["constituent_smiles"].strip(),
-                    "constituent_category": row["constituent_category"].strip(),
-                    "description":          row["description"].strip(),
-                })
-                self._food_display[key] = display
-        logger.info(f"  Food dataset: {len(self._foods)} unique foods")
 
-    # ── Lookup ────────────────────────────────────────────────────────────────
+        total_rows = 0
+        skipped = 0
+
+        with open(FOOD_CSV, newline="", encoding="latin-1") as f:
+            reader = csv.DictReader(f)
+
+            for row in reader:
+                total_rows += 1
+
+                try:
+                    food_name = row["food_name"].strip()
+                    constituent = row["constituent_name"].strip()
+                    smiles = row["constituent_smiles"].strip()
+
+                    if not food_name or not constituent or not smiles:
+                        skipped += 1
+                        continue
+
+                    key = food_name.lower()
+
+                    self._foods[key].append({
+                        "constituent_name": constituent,
+                        "constituent_smiles": smiles,
+                        "constituent_category": row.get(
+                            "constituent_category", "FoodDB"
+                        ).strip(),
+                        "description": row.get(
+                            "description",
+                            f"{constituent} found in {food_name}"
+                        ).strip()
+                    })
+
+                    self._food_display[key] = food_name
+
+                except Exception:
+                    skipped += 1
+                    continue
+
+                # Progress log every 100k rows
+                if total_rows % 100000 == 0:
+                    logger.info(f"Loaded {total_rows:,} food rows...")
+
+        logger.info(
+            f"Food dataset loaded: {len(self._foods)} foods | "
+            f"{total_rows:,} rows | skipped {skipped:,}"
+        )
+
+    # ==========================================================
+    # LOOKUPS
+    # ==========================================================
     def get_drug(self, name: str) -> dict | None:
         return self._drugs.get(name.strip().lower())
 
@@ -95,5 +161,4 @@ class DataLoader:
         return sorted(v["drug_name"] for v in self._drugs.values())
 
     def list_foods(self) -> list[str]:
-        # Pure in-memory — no disk access after initial load
         return sorted(self._food_display.values())
