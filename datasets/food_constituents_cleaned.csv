@@ -13475,3 +13475,51 @@ Zwieback,Heptanoic acid,CCCCCCC(O)=O,FoodDB,Heptanoic acid found in Zwieback
 Zwieback,L-Ascorbic acid,[H][C@@]1(OC(=O)C(O)=C1O)[C@@H](O)CO,FoodDB,L-Ascorbic acid found in Zwieback
 linseed oil,9-F1-phytoprostane,CC[C@H]1[C@@H](O)C[C@H](O)[C@H]1\C=C\[C@H](O)CCCCCCCC(O)=O,FoodDB,9-F1-phytoprostane found in linseed oil
 linseed oil,16-F1-phytoprostane,CSC1=NC(NC(N1)=NC(C)C)=NC(C)C,FoodDB,16-F1-phytoprostane found in linseed oil
+food_name,constituent_name,constituent_smiles,constituent_category,description
+Grapefruit,Furanocoumarins,C1=CC2=C(C=C1OCC3=CC4=CC=CC=C4O3)C=CO2,CYP Inhibitor,Inhibits CYP3A4 enzyme responsible for metabolizing many drugs
+Grapefruit,Naringenin,OC1CC(=O)c2c(O)cc(O)cc2O1,Flavonoid,Inhibits drug transporters in intestine
+Grapefruit,Bergamottin,CC(=CCC/C(=C/CCC(C)(C)C=C)C)COc1cc2ccoc2cc1,CYP Inhibitor,Mechanism-based inhibitor of CYP3A4
+Spinach,Vitamin K,CC1(CCC(=C)C(C1)OC(=O)/C=C/c1ccc(O)cc1)C,Vitamin,Essential for blood clotting cascade
+Spinach,Iron,O=S(=O)([O-])O.[Fe+2].O=S(=O)([O-])O,Mineral,Non-heme iron that can chelate certain drugs
+Spinach,Calcium,OC([O-])=O.[Ca+2].OC([O-])=O,Mineral,Can chelate and reduce absorption of certain antibiotics
+Spinach,Oxalate,OC(=O)C(=O)O,Organic Acid,Can bind minerals and reduce their bioavailability
+Milk,Calcium,OC([O-])=O.[Ca+2].OC([O-])=O,Mineral,Chelates fluoroquinolones and tetracyclines reducing absorption
+Milk,Tyramine,NCCc1ccc(O)cc1,Biogenic Amine,Formed from fermented dairy; dangerous with MAOIs
+Cheese (Aged),Tyramine,NCCc1ccc(O)cc1,Biogenic Amine,High levels in aged cheese; dangerous hypertensive crisis with MAOIs
+Cheese (Aged),Histamine,NCCc1c[nH]cn1,Biogenic Amine,Can trigger reactions in sensitive individuals
+Coffee,Caffeine,Cn1cnc2c1c(=O)n(C)c(=O)n2C,Xanthine,CYP1A2 substrate; affects multiple drug metabolisms
+Coffee,Tannins,OC1=CC(=CC(O)=C1O)C(=O)OC2=C(OC(=O)c3cc(O)c(O)c(O)c3)C(OC(=O)c3cc(O)c(O)c(O)c3)C(OC(=O)c3cc(O)c(O)c(O)c3)C(OC(=O)c3cc(O)c(O)c(O)c3)C2OC(=O)c2cc(O)c(O)c(O)c2,Polyphenol,Can reduce absorption of iron and some drugs
+Alcohol (Beer/Wine/Spirits),Ethanol,CCO,Alcohol,CNS depressant; affects liver enzymes; dangerous with many drugs
+Alcohol (Beer/Wine/Spirits),Acetaldehyde,CC=O,Aldehyde,Toxic metabolite; accumulates with certain drug interactions
+Wine (Red),Tyramine,NCCc1ccc(O)cc1,Biogenic Amine,Higher in red wine; dangerous with MAOIs
+Wine (Red),Resveratrol,Oc1ccc(/C=C/c2cc(O)cc(O)c2)cc1,Polyphenol,CYP inhibitor; may affect drug metabolism
+Garlic,Allicin,C=CCS(=O)SCC=C,Organosulfur,Can affect CYP enzymes and drug metabolism
+Garlic,Quercetin,O=c1c(O)c(-c2ccc(O)c(O)c2)oc2cc(O)cc(O)c12,Flavonoid,Inhibits drug transporters P-gp
+Green Tea,Catechins (EGCG),O=C(OC1Cc2c(O)cc(O)cc2OC1c1ccc(O)c(O)c1)c1cc(O)c(O)c(O)c1,Polyphenol,Inhibits multiple drug transporters
+Green Tea,Caffeine,Cn1cnc2c1c(=O)n(C)c(=O)n2C,Xanthine,CYP1A2 substrate; affects drug metabolism
+Green Tea,Tannins,OC1=CC(=CC(O)=C1O)C(=O)OC2=C(OC(=O)c3cc(O)c(O)c(O)c3)C(OC(=O)c3cc(O)c(O)c(O)c3)C(OC(=O)c3cc(O)c(O)c(O)c3)C(OC(=O)c3cc(O)c(O)c(O)c3)C2OC(=O)c2cc(O)c(O)c(O)c2,Polyphenol,Reduces iron and drug absorption
+Tomato,Lycopene,CC(=C/C=C/C(=C/C=C/C(=C/C=C/C(C)(C)C)C)C)C=CC=C(C)C=CC=C(C)C,Carotenoid,Generally safe; minimal drug interactions
+Tomato,Vitamin C,OCC(O)C1OC(=O)C(O)=C1O,Vitamin,Can affect absorption and excretion of some drugs
+Banana,Tyramine,NCCc1ccc(O)cc1,Biogenic Amine,Low-moderate levels; relevant with MAOIs only in large amounts
+Banana,Potassium,OC([O-])=O.[K+],Mineral,Relevant with potassium-affecting drugs
+Banana,Tryptophan,N[C@@H](Cc1c[nH]c2ccccc12)C(=O)O,Amino Acid,Serotonin precursor; interaction with MAOIs and SSRIs
+Avocado,Vitamin K,CC1(CCC(=C)C(C1)OC(=O)/C=C/c1ccc(O)cc1)C,Vitamin,Can interfere with anticoagulants like Warfarin
+Avocado,Tyramine,NCCc1ccc(O)cc1,Biogenic Amine,Low levels; minor concern with MAOIs
+Broccoli,Vitamin K,CC1(CCC(=C)C(C1)OC(=O)/C=C/c1ccc(O)cc1)C,Vitamin,High content; interferes with Warfarin therapy
+Broccoli,Calcium,OC([O-])=O.[Ca+2].OC([O-])=O,Mineral,Chelates certain antibiotics
+Broccoli,Iron,O=S(=O)([O-])O.[Fe+2].O=S(=O)([O-])O,Mineral,Non-heme iron; drug chelation risk
+Dairy (Yogurt),Calcium,OC([O-])=O.[Ca+2].OC([O-])=O,Mineral,Chelates fluoroquinolones and tetracyclines
+Dairy (Yogurt),Tyramine,NCCc1ccc(O)cc1,Biogenic Amine,Fermented dairy can contain tyramine
+St. John's Wort,Hypericin,O=c1c2c(O)c(O)c3c(=O)c4c(O)c(O)c5c(O)c(O)c6c(=O)c(O)c2c1c3c4c56,Naphthodianthrone,Potent CYP3A4 inducer; reduces many drug levels
+St. John's Wort,Hyperforin,O=C1C(=CC2(CC=C(C)C)C(=O)c3c(O)c(CC=C(C)C)c(CC=C(C)C)c(O)c3C12)CC=C(C)C,Phloroglucinol,P-glycoprotein inducer; reduces drug bioavailability
+Turmeric,Curcumin,COc1cc(/C=C/C(=O)/C=C/c2ccc(O)c(OC)c2)ccc1O,Polyphenol,CYP inhibitor and P-gp inhibitor
+Flaxseed,Lignans,COc1cc(C[C@@H]2CO[C@@H](c3ccc(O)c(OC)c3)[C@H]2CO)ccc1O,Phytoestrogen,Can affect hormone-related drug activity
+Black Pepper,Piperine,O=C(/C=C/C=C/c1ccc2c(c1)OCO2)N1CCCCC1,Alkaloid,Potent CYP3A4 and P-gp inhibitor - enhances drug absorption
+Pomelo,Furanocoumarins,C1=CC2=C(C=C1OCC3=CC4=CC=CC=C4O3)C=CO2,CYP Inhibitor,Same as grapefruit - CYP3A4 inhibitor
+Pomelo,Naringenin,OC1CC(=O)c2c(O)cc(O)cc2O1,Flavonoid,Drug transporter inhibitor
+Kale,Vitamin K,CC1(CCC(=C)C(C1)OC(=O)/C=C/c1ccc(O)cc1)C,Vitamin,Very high content; major Warfarin interaction concern
+Kale,Calcium,OC([O-])=O.[Ca+2].OC([O-])=O,Mineral,Chelation of antibiotics
+Brussels Sprouts,Vitamin K,CC1(CCC(=C)C(C1)OC(=O)/C=C/c1ccc(O)cc1)C,Vitamin,High Vitamin K; Warfarin interaction
+Energy Drinks,Caffeine,Cn1cnc2c1c(=O)n(C)c(=O)n2C,Xanthine,CYP1A2 substrate; multiple drug interactions
+Energy Drinks,Taurine,NCCS(=O)(=O)O,Amino Sulfonic Acid,Potential interaction with cardiovascular drugs
+Licorice,Glycyrrhizin,O=C(O)[C@@H]1O[C@@H](OC2C(O)C(O)C(O[C@@H]3OC(C(=O)O)C(O)C(O)C3O)OC2CO)[C@H](O)[C@@H](O)[C@H]1O,Triterpenoid Glycoside,Can cause pseudoaldosteronism; affects antihypertensives

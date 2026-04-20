@@ -317,3 +317,240 @@
 {"ts": "2026-04-18T06:37:09.239611+00:00", "level": "INFO", "logger": "molguard.api", "message": "POST /predict \u2192 200 (2886ms)"}
 {"ts": "2026-04-18T06:38:02.252099+00:00", "level": "INFO", "logger": "molguard.audit", "message": "PREDICT | UNSAFE | risk=Moderate | prob=0.800 | Aspirin + Rice | 501ms", "drug": "Aspirin", "food": "Rice", "duration_ms": 501.4}
 {"ts": "2026-04-18T06:38:02.256865+00:00", "level": "INFO", "logger": "molguard.api", "message": "POST /predict \u2192 200 (507ms)"}
+{"ts": "2026-04-19T05:54:43.907189+00:00", "level": "INFO", "logger": "molguard.api", "message": "Starting MolGuard API v3..."}
+{"ts": "2026-04-19T05:55:03.813298+00:00", "level": "INFO", "logger": "molguard.api", "message": "Server ready | model_loaded=True"}
+{"ts": "2026-04-19T05:56:54.891823+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET / \u2192 404 (1ms)"}
+{"ts": "2026-04-19T05:56:54.969230+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /favicon.ico \u2192 404 (1ms)"}
+{"ts": "2026-04-19T05:57:05.179983+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /docs \u2192 200 (1ms)"}
+{"ts": "2026-04-19T05:57:05.386708+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /openapi.json \u2192 200 (74ms)"}
+{"ts": "2026-04-19T05:58:01.197767+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /foods \u2192 200 (19ms)"}
+{"ts": "2026-04-19T05:58:01.202693+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /drugs \u2192 200 (23ms)"}
+{"ts": "2026-04-19T05:58:01.221002+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /foods \u2192 200 (7ms)"}
+{"ts": "2026-04-19T05:58:01.231000+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /drugs \u2192 200 (16ms)"}
+{"ts": "2026-04-19T05:58:54.370834+00:00", "level": "INFO", "logger": "molguard.api", "message": "OPTIONS /predict \u2192 200 (0ms)"}
+{"ts": "2026-04-19T05:58:54.397275+00:00", "level": "INFO", "logger": "molguard.api", "message": "'Lycopene' not in dataset \u2014 querying PubChem as food fallback"}
+{"ts": "2026-04-19T05:58:56.174281+00:00", "level": "INFO", "logger": "molguard.api", "message": "POST /predict \u2192 404 (1797ms)"}
+{"ts": "2026-04-19T06:12:17.005191+00:00", "level": "INFO", "logger": "molguard.api", "message": "OPTIONS /predict \u2192 200 (1ms)"}
+{"ts": "2026-04-19T06:12:17.020202+00:00", "level": "INFO", "logger": "molguard.api", "message": "'Lycopene' not in dataset \u2014 querying PubChem as food fallback"}
+{"ts": "2026-04-19T06:12:18.592767+00:00", "level": "INFO", "logger": "molguard.api", "message": "POST /predict \u2192 404 (1576ms)"}
+{"ts": "2026-04-19T06:13:10.763169+00:00", "level": "INFO", "logger": "molguard.api", "message": "Starting MolGuard API v3..."}
+{"ts": "2026-04-19T06:13:16.908362+00:00", "level": "INFO", "logger": "molguard.api", "message": "Server ready | model_loaded=True"}
+{"ts": "2026-04-19T06:13:52.229834+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET / \u2192 404 (1ms)"}
+{"ts": "2026-04-19T06:13:52.325585+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /favicon.ico \u2192 404 (1ms)"}
+{"ts": "2026-04-19T06:13:58.294263+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /docs \u2192 200 (1ms)"}
+{"ts": "2026-04-19T06:13:58.514605+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /openapi.json \u2192 200 (54ms)"}
+{"ts": "2026-04-19T06:14:13.614288+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /drugs \u2192 200 (18ms)"}
+{"ts": "2026-04-19T06:14:13.628952+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /foods \u2192 200 (28ms)"}
+{"ts": "2026-04-19T06:14:13.647978+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /drugs \u2192 200 (12ms)"}
+{"ts": "2026-04-19T06:14:13.665582+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /foods \u2192 200 (18ms)"}
+{"ts": "2026-04-19T06:14:31.743153+00:00", "level": "INFO", "logger": "molguard.api", "message": "OPTIONS /predict \u2192 200 (1ms)"}
+{"ts": "2026-04-19T06:14:31.760744+00:00", "level": "INFO", "logger": "molguard.api", "message": "'Lycopene' not in dataset \u2014 querying PubChem as food fallback"}
+{"ts": "2026-04-19T06:14:33.654145+00:00", "level": "INFO", "logger": "molguard.api", "message": "POST /predict \u2192 404 (1899ms)"}
+{"ts": "2026-04-19T06:14:46.327673+00:00", "level": "INFO", "logger": "molguard.audit", "message": "PREDICT | SAFE | risk=None | prob=0.150 | Metformin + Tomato | 120ms", "drug": "Metformin", "food": "Tomato", "duration_ms": 119.6}
+{"ts": "2026-04-19T06:14:46.340731+00:00", "level": "INFO", "logger": "molguard.api", "message": "POST /predict \u2192 200 (133ms)"}
+{"ts": "2026-04-19T06:16:21.725264+00:00", "level": "INFO", "logger": "molguard.audit", "message": "PREDICT | UNSAFE | risk=Critical | prob=0.800 | MAOIs (Phenelzine) + Avocado | 616ms", "drug": "MAOIs (Phenelzine)", "food": "Avocado", "duration_ms": 616.0}
+{"ts": "2026-04-19T06:16:21.729261+00:00", "level": "INFO", "logger": "molguard.api", "message": "POST /predict \u2192 200 (622ms)"}
+{"ts": "2026-04-19T06:17:42.178325+00:00", "level": "INFO", "logger": "molguard.api", "message": "'Omeprazole' not in dataset \u2014 querying PubChem"}
+{"ts": "2026-04-19T06:17:43.819814+00:00", "level": "INFO", "logger": "molguard.api", "message": "POST /predict \u2192 404 (1642ms)"}
+{"ts": "2026-04-19T06:26:14.901047+00:00", "level": "INFO", "logger": "molguard.api", "message": "Starting MolGuard API v3..."}
+{"ts": "2026-04-19T06:26:35.745806+00:00", "level": "INFO", "logger": "molguard.api", "message": "Server ready | model_loaded=True"}
+{"ts": "2026-04-19T06:27:12.809512+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET / \u2192 404 (2ms)"}
+{"ts": "2026-04-19T06:27:12.902604+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /favicon.ico \u2192 404 (0ms)"}
+{"ts": "2026-04-19T06:27:22.218534+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /docs \u2192 200 (1ms)"}
+{"ts": "2026-04-19T06:27:22.338428+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /openapi.json \u2192 200 (28ms)"}
+{"ts": "2026-04-19T06:27:49.419270+00:00", "level": "INFO", "logger": "molguard.audit", "message": "PREDICT | SAFE | risk=None | prob=0.150 | Metformin + Tomato | 0ms", "drug": "Metformin", "food": "Tomato", "duration_ms": 0.1}
+{"ts": "2026-04-19T06:27:49.421269+00:00", "level": "INFO", "logger": "molguard.api", "message": "POST /predict \u2192 200 (4ms)"}
+{"ts": "2026-04-19T06:28:06.890616+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /drugs \u2192 200 (5ms)"}
+{"ts": "2026-04-19T06:28:06.895549+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /foods \u2192 200 (8ms)"}
+{"ts": "2026-04-19T06:28:06.902505+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /drugs \u2192 200 (5ms)"}
+{"ts": "2026-04-19T06:28:06.908022+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /foods \u2192 200 (7ms)"}
+{"ts": "2026-04-19T06:28:45.464133+00:00", "level": "INFO", "logger": "molguard.api", "message": "OPTIONS /predict \u2192 200 (0ms)"}
+{"ts": "2026-04-19T06:28:45.472623+00:00", "level": "INFO", "logger": "molguard.api", "message": "'Omeprazole' not in dataset \u2014 querying PubChem"}
+{"ts": "2026-04-19T06:28:47.991128+00:00", "level": "INFO", "logger": "molguard.audit", "message": "PREDICT | UNSAFE | risk=Unknown | prob=0.800 | Omeprazole + Watermelon | 2519ms", "drug": "Omeprazole", "food": "Watermelon", "duration_ms": 2519.2}
+{"ts": "2026-04-19T06:28:47.992128+00:00", "level": "INFO", "logger": "molguard.api", "message": "POST /predict \u2192 200 (2522ms)"}
+{"ts": "2026-04-19T06:38:21.292185+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /food/Watermelon \u2192 200 (1ms)"}
+{"ts": "2026-04-19T06:48:20.712565+00:00", "level": "INFO", "logger": "molguard.api", "message": "Starting MolGuard API v3..."}
+{"ts": "2026-04-19T06:48:45.406699+00:00", "level": "INFO", "logger": "molguard.api", "message": "Server ready | model_loaded=True"}
+{"ts": "2026-04-19T06:49:28.721152+00:00", "level": "INFO", "logger": "molguard.api", "message": "Starting MolGuard API v3..."}
+{"ts": "2026-04-19T06:49:32.636075+00:00", "level": "INFO", "logger": "molguard.api", "message": "Server ready | model_loaded=True"}
+{"ts": "2026-04-19T06:49:35.275359+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET / \u2192 404 (0ms)"}
+{"ts": "2026-04-19T06:49:35.429097+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /favicon.ico \u2192 404 (0ms)"}
+{"ts": "2026-04-19T06:50:17.738443+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /drugs \u2192 200 (8ms)"}
+{"ts": "2026-04-19T06:50:17.740494+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /foods \u2192 200 (9ms)"}
+{"ts": "2026-04-19T06:50:29.853066+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /docs \u2192 200 (1ms)"}
+{"ts": "2026-04-19T06:50:29.976508+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /openapi.json \u2192 200 (25ms)"}
+{"ts": "2026-04-19T06:50:45.335949+00:00", "level": "INFO", "logger": "molguard.api", "message": "OPTIONS /predict \u2192 200 (0ms)"}
+{"ts": "2026-04-19T06:50:45.346303+00:00", "level": "INFO", "logger": "molguard.api", "message": "'Omeprazole' not in dataset \u2014 querying PubChem"}
+{"ts": "2026-04-19T06:50:46.275123+00:00", "level": "INFO", "logger": "molguard.api", "message": "POST /predict \u2192 404 (933ms)"}
+{"ts": "2026-04-19T06:50:58.488988+00:00", "level": "INFO", "logger": "molguard.api", "message": "'Omeprazole' not in dataset \u2014 querying PubChem"}
+{"ts": "2026-04-19T06:51:07.459156+00:00", "level": "INFO", "logger": "molguard.api", "message": "POST /predict \u2192 404 (8974ms)"}
+{"ts": "2026-04-19T06:51:41.412438+00:00", "level": "INFO", "logger": "molguard.api", "message": "'Omeprazole' not in dataset \u2014 querying PubChem"}
+{"ts": "2026-04-19T06:51:51.980755+00:00", "level": "INFO", "logger": "molguard.api", "message": "POST /predict \u2192 404 (10568ms)"}
+{"ts": "2026-04-19T06:53:20.341955+00:00", "level": "INFO", "logger": "molguard.api", "message": "'Tomato' not in dataset \u2014 querying PubChem as food fallback"}
+{"ts": "2026-04-19T06:53:21.331982+00:00", "level": "INFO", "logger": "molguard.api", "message": "POST /predict \u2192 404 (990ms)"}
+{"ts": "2026-04-19T06:57:11.885887+00:00", "level": "INFO", "logger": "molguard.api", "message": "Starting MolGuard API v3..."}
+{"ts": "2026-04-19T06:57:15.824729+00:00", "level": "INFO", "logger": "molguard.api", "message": "Server ready | model_loaded=True"}
+{"ts": "2026-04-19T06:57:22.420338+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET / \u2192 404 (1ms)"}
+{"ts": "2026-04-19T06:57:43.296616+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /docs \u2192 200 (1ms)"}
+{"ts": "2026-04-19T06:57:43.411275+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /openapi.json \u2192 200 (25ms)"}
+{"ts": "2026-04-19T06:57:57.618501+00:00", "level": "INFO", "logger": "molguard.audit", "message": "PREDICT | SAFE | risk=None | prob=0.150 | Metformin + Tomato | 0ms", "drug": "Metformin", "food": "Tomato", "duration_ms": 0.2}
+{"ts": "2026-04-19T06:57:57.620412+00:00", "level": "INFO", "logger": "molguard.api", "message": "POST /predict \u2192 200 (3ms)"}
+{"ts": "2026-04-19T08:14:36.791666+00:00", "level": "INFO", "logger": "molguard.api", "message": "Starting MolGuard API v3..."}
+{"ts": "2026-04-19T08:14:40.719572+00:00", "level": "INFO", "logger": "molguard.api", "message": "Server ready | model_loaded=True"}
+{"ts": "2026-04-19T08:14:57.077467+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET / \u2192 404 (1ms)"}
+{"ts": "2026-04-19T08:14:57.170948+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /favicon.ico \u2192 404 (1ms)"}
+{"ts": "2026-04-19T08:15:05.809182+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /docs \u2192 200 (1ms)"}
+{"ts": "2026-04-19T08:15:05.933605+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /openapi.json \u2192 200 (28ms)"}
+{"ts": "2026-04-19T08:15:11.975693+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /drugs \u2192 200 (6ms)"}
+{"ts": "2026-04-19T08:15:11.976690+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /foods \u2192 200 (7ms)"}
+{"ts": "2026-04-19T08:15:11.985228+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /drugs \u2192 200 (2ms)"}
+{"ts": "2026-04-19T08:15:11.991222+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /foods \u2192 200 (3ms)"}
+{"ts": "2026-04-19T08:15:17.091336+00:00", "level": "INFO", "logger": "molguard.api", "message": "OPTIONS /predict \u2192 200 (0ms)"}
+{"ts": "2026-04-19T08:15:17.099333+00:00", "level": "INFO", "logger": "molguard.api", "message": "'Omeprazole' not in dataset \u2014 querying PubChem"}
+{"ts": "2026-04-19T08:15:19.327717+00:00", "level": "INFO", "logger": "molguard.audit", "message": "PREDICT | SAFE | risk=None | prob=0.150 | Omeprazole + Watermelon | 2228ms", "drug": "Omeprazole", "food": "Watermelon", "duration_ms": 2227.7}
+{"ts": "2026-04-19T08:15:19.330718+00:00", "level": "INFO", "logger": "molguard.api", "message": "POST /predict \u2192 200 (2234ms)"}
+{"ts": "2026-04-19T08:19:03.998720+00:00", "level": "INFO", "logger": "molguard.api", "message": "'Paracetamol' not in dataset \u2014 querying PubChem"}
+{"ts": "2026-04-19T08:19:05.579075+00:00", "level": "INFO", "logger": "molguard.audit", "message": "PREDICT | SAFE | risk=None | prob=0.150 | Paracetamol + Rice | 1579ms", "drug": "Paracetamol", "food": "Rice", "duration_ms": 1579.4}
+{"ts": "2026-04-19T08:19:05.581132+00:00", "level": "INFO", "logger": "molguard.api", "message": "POST /predict \u2192 200 (1582ms)"}
+{"ts": "2026-04-19T08:19:25.945227+00:00", "level": "INFO", "logger": "molguard.api", "message": "'Oats' not in dataset \u2014 querying PubChem as food fallback"}
+{"ts": "2026-04-19T08:19:27.968854+00:00", "level": "INFO", "logger": "molguard.api", "message": "POST /predict \u2192 404 (2024ms)"}
+{"ts": "2026-04-19T08:20:04.428704+00:00", "level": "INFO", "logger": "molguard.api", "message": "'Amoxicillin' not in dataset \u2014 querying PubChem"}
+{"ts": "2026-04-19T08:20:06.498887+00:00", "level": "INFO", "logger": "molguard.audit", "message": "PREDICT | UNSAFE | risk=Unknown | prob=0.800 | Amoxicillin + Banana | 2069ms", "drug": "Amoxicillin", "food": "Banana", "duration_ms": 2069.5}
+{"ts": "2026-04-19T08:20:06.500884+00:00", "level": "INFO", "logger": "molguard.api", "message": "POST /predict \u2192 200 (2073ms)"}
+{"ts": "2026-04-19T08:23:27.001501+00:00", "level": "INFO", "logger": "molguard.api", "message": "'Cetirizine' not in dataset \u2014 querying PubChem"}
+{"ts": "2026-04-19T08:23:29.458047+00:00", "level": "INFO", "logger": "molguard.audit", "message": "PREDICT | SAFE | risk=None | prob=0.150 | Cetirizine + Apple | 2456ms", "drug": "Cetirizine", "food": "Apple", "duration_ms": 2455.7}
+{"ts": "2026-04-19T08:23:29.461052+00:00", "level": "INFO", "logger": "molguard.api", "message": "POST /predict \u2192 200 (2459ms)"}
+{"ts": "2026-04-19T08:23:56.155504+00:00", "level": "INFO", "logger": "molguard.api", "message": "'Bread' not in dataset \u2014 querying PubChem as food fallback"}
+{"ts": "2026-04-19T08:23:57.995369+00:00", "level": "INFO", "logger": "molguard.api", "message": "POST /predict \u2192 404 (1840ms)"}
+{"ts": "2026-04-19T08:24:41.700985+00:00", "level": "INFO", "logger": "molguard.api", "message": "'Vitamin C' not in dataset \u2014 querying PubChem"}
+{"ts": "2026-04-19T08:24:43.513547+00:00", "level": "INFO", "logger": "molguard.api", "message": "'Orange' not in dataset \u2014 querying PubChem as food fallback"}
+{"ts": "2026-04-19T08:24:45.464525+00:00", "level": "INFO", "logger": "molguard.api", "message": "POST /predict \u2192 404 (3764ms)"}
+{"ts": "2026-04-19T08:25:22.383123+00:00", "level": "INFO", "logger": "molguard.api", "message": "OPTIONS /predict \u2192 200 (0ms)"}
+{"ts": "2026-04-19T08:25:22.389146+00:00", "level": "INFO", "logger": "molguard.api", "message": "'Vitamin C' not in dataset \u2014 querying PubChem"}
+{"ts": "2026-04-19T08:25:24.595159+00:00", "level": "INFO", "logger": "molguard.audit", "message": "PREDICT | SAFE | risk=None | prob=0.150 | Vitamin C + Mandarin orange (Clementine, Tangerine) | 2207ms", "drug": "Vitamin C", "food": "Mandarin orange (Clementine, Tangerine)", "duration_ms": 2206.8}
+{"ts": "2026-04-19T08:25:24.597227+00:00", "level": "INFO", "logger": "molguard.api", "message": "POST /predict \u2192 200 (2209ms)"}
+{"ts": "2026-04-19T08:25:36.587937+00:00", "level": "INFO", "logger": "molguard.api", "message": "'Vitamin C' not in dataset \u2014 querying PubChem"}
+{"ts": "2026-04-19T08:25:38.308364+00:00", "level": "INFO", "logger": "molguard.audit", "message": "PREDICT | SAFE | risk=None | prob=0.150 | Vitamin C + Orange bell pepper | 1718ms", "drug": "Vitamin C", "food": "Orange bell pepper", "duration_ms": 1718.3}
+{"ts": "2026-04-19T08:25:38.312350+00:00", "level": "INFO", "logger": "molguard.api", "message": "POST /predict \u2192 200 (1723ms)"}
+{"ts": "2026-04-19T08:25:55.592663+00:00", "level": "INFO", "logger": "molguard.api", "message": "'Vitamin C' not in dataset \u2014 querying PubChem"}
+{"ts": "2026-04-19T08:25:57.484950+00:00", "level": "INFO", "logger": "molguard.audit", "message": "PREDICT | SAFE | risk=None | prob=0.150 | Vitamin C + Orange mint | 1891ms", "drug": "Vitamin C", "food": "Orange mint", "duration_ms": 1890.9}
+{"ts": "2026-04-19T08:25:57.489062+00:00", "level": "INFO", "logger": "molguard.api", "message": "POST /predict \u2192 200 (1897ms)"}
+{"ts": "2026-04-19T08:26:11.111441+00:00", "level": "INFO", "logger": "molguard.api", "message": "'Vitamin C' not in dataset \u2014 querying PubChem"}
+{"ts": "2026-04-19T08:26:13.039531+00:00", "level": "INFO", "logger": "molguard.audit", "message": "PREDICT | UNSAFE | risk=Unknown | prob=0.800 | Vitamin C + Orange roughy | 1927ms", "drug": "Vitamin C", "food": "Orange roughy", "duration_ms": 1927.0}
+{"ts": "2026-04-19T08:26:13.040532+00:00", "level": "INFO", "logger": "molguard.api", "message": "POST /predict \u2192 200 (1930ms)"}
+{"ts": "2026-04-19T08:31:33.783919+00:00", "level": "INFO", "logger": "molguard.api", "message": "Starting MolGuard API v3..."}
+{"ts": "2026-04-19T08:31:40.328493+00:00", "level": "INFO", "logger": "molguard.api", "message": "Server ready | model_loaded=True"}
+{"ts": "2026-04-19T08:31:45.010145+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET / \u2192 404 (0ms)"}
+{"ts": "2026-04-19T08:31:52.823097+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /docs \u2192 200 (1ms)"}
+{"ts": "2026-04-19T08:31:52.949873+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /openapi.json \u2192 200 (26ms)"}
+{"ts": "2026-04-19T08:32:10.329879+00:00", "level": "INFO", "logger": "molguard.api", "message": "'Vitamin C' not in dataset \u2014 querying PubChem"}
+{"ts": "2026-04-19T08:32:15.107048+00:00", "level": "INFO", "logger": "molguard.audit", "message": "PREDICT | SAFE | risk=None | prob=0.150 | Vitamin C + Orange roughy | 4776ms", "drug": "Vitamin C", "food": "Orange roughy", "duration_ms": 4776.4}
+{"ts": "2026-04-19T08:32:15.111199+00:00", "level": "INFO", "logger": "molguard.api", "message": "POST /predict \u2192 200 (4785ms)"}
+{"ts": "2026-04-19T08:33:43.586422+00:00", "level": "INFO", "logger": "molguard.audit", "message": "PREDICT | SAFE | risk=None | prob=0.150 | Losartan + Pear | 131ms", "drug": "Losartan", "food": "Pear", "duration_ms": 130.8}
+{"ts": "2026-04-19T08:33:43.588406+00:00", "level": "INFO", "logger": "molguard.api", "message": "POST /predict \u2192 200 (133ms)"}
+{"ts": "2026-04-19T08:34:12.583499+00:00", "level": "INFO", "logger": "molguard.audit", "message": "PREDICT | SAFE | risk=None | prob=0.150 | Aspirin + Rice | 67ms", "drug": "Aspirin", "food": "Rice", "duration_ms": 67.4}
+{"ts": "2026-04-19T08:34:12.584488+00:00", "level": "INFO", "logger": "molguard.api", "message": "POST /predict \u2192 200 (69ms)"}
+{"ts": "2026-04-19T08:35:10.057109+00:00", "level": "INFO", "logger": "molguard.api", "message": "'Azithromycin' not in dataset \u2014 querying PubChem"}
+{"ts": "2026-04-19T08:35:11.761979+00:00", "level": "INFO", "logger": "molguard.api", "message": "'Chapati' not in dataset \u2014 querying PubChem as food fallback"}
+{"ts": "2026-04-19T08:35:13.122074+00:00", "level": "INFO", "logger": "molguard.api", "message": "POST /predict \u2192 404 (3066ms)"}
+{"ts": "2026-04-19T08:36:01.894768+00:00", "level": "INFO", "logger": "molguard.api", "message": "OPTIONS /predict \u2192 200 (0ms)"}
+{"ts": "2026-04-19T08:36:01.898768+00:00", "level": "INFO", "logger": "molguard.api", "message": "'Empagliflozin' not in dataset \u2014 querying PubChem"}
+{"ts": "2026-04-19T08:36:03.226315+00:00", "level": "INFO", "logger": "molguard.api", "message": "'Coconut Water' not in dataset \u2014 querying PubChem as food fallback"}
+{"ts": "2026-04-19T08:36:04.620108+00:00", "level": "INFO", "logger": "molguard.api", "message": "POST /predict \u2192 404 (2722ms)"}
+{"ts": "2026-04-19T08:36:21.607103+00:00", "level": "INFO", "logger": "molguard.api", "message": "'Empagliflozin' not in dataset \u2014 querying PubChem"}
+{"ts": "2026-04-19T08:36:23.109114+00:00", "level": "INFO", "logger": "molguard.audit", "message": "PREDICT | SAFE | risk=None | prob=0.150 | Empagliflozin + Coconut | 1503ms", "drug": "Empagliflozin", "food": "Coconut", "duration_ms": 1502.9}
+{"ts": "2026-04-19T08:36:23.111120+00:00", "level": "INFO", "logger": "molguard.api", "message": "POST /predict \u2192 200 (1506ms)"}
+{"ts": "2026-04-19T08:36:46.694897+00:00", "level": "INFO", "logger": "molguard.api", "message": "'Rosuvastatin' not in dataset \u2014 querying PubChem"}
+{"ts": "2026-04-19T08:36:48.278083+00:00", "level": "INFO", "logger": "molguard.audit", "message": "PREDICT | UNSAFE | risk=Unknown | prob=0.800 | Rosuvastatin + Avocado | 1582ms", "drug": "Rosuvastatin", "food": "Avocado", "duration_ms": 1582.1}
+{"ts": "2026-04-19T08:36:48.279085+00:00", "level": "INFO", "logger": "molguard.api", "message": "POST /predict \u2192 200 (1585ms)"}
+{"ts": "2026-04-20T06:12:57.736621+00:00", "level": "INFO", "logger": "molguard.api", "message": "Starting MolGuard API v3..."}
+{"ts": "2026-04-20T06:13:17.211363+00:00", "level": "INFO", "logger": "molguard.api", "message": "Server ready | model_loaded=True"}
+{"ts": "2026-04-20T06:13:38.326025+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET / \u2192 404 (0ms)"}
+{"ts": "2026-04-20T06:13:38.490070+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /favicon.ico \u2192 404 (0ms)"}
+{"ts": "2026-04-20T06:14:04.013821+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /foods \u2192 200 (8ms)"}
+{"ts": "2026-04-20T06:14:04.016730+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /drugs \u2192 200 (8ms)"}
+{"ts": "2026-04-20T06:14:04.026447+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /foods \u2192 200 (3ms)"}
+{"ts": "2026-04-20T06:14:04.032453+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /drugs \u2192 200 (3ms)"}
+{"ts": "2026-04-20T06:14:12.497005+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /stats \u2192 200 (57ms)"}
+{"ts": "2026-04-20T06:14:12.507203+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /stats \u2192 200 (5ms)"}
+{"ts": "2026-04-20T06:14:22.577686+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /drugs \u2192 200 (2ms)"}
+{"ts": "2026-04-20T06:14:22.586391+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /foods \u2192 200 (3ms)"}
+{"ts": "2026-04-20T06:14:22.594814+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /drugs \u2192 200 (1ms)"}
+{"ts": "2026-04-20T06:14:22.609215+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /foods \u2192 200 (4ms)"}
+{"ts": "2026-04-20T06:14:47.340072+00:00", "level": "INFO", "logger": "molguard.api", "message": "OPTIONS /predict \u2192 200 (0ms)"}
+{"ts": "2026-04-20T06:14:47.351753+00:00", "level": "INFO", "logger": "molguard.api", "message": "'Empagliflozin' not in dataset \u2014 querying PubChem"}
+{"ts": "2026-04-20T06:14:50.993941+00:00", "level": "INFO", "logger": "molguard.audit", "message": "PREDICT | SAFE | risk=None | prob=0.150 | Empagliflozin + Coconut | 3644ms", "drug": "Empagliflozin", "food": "Coconut", "duration_ms": 3644.2}
+{"ts": "2026-04-20T06:14:51.002146+00:00", "level": "INFO", "logger": "molguard.api", "message": "POST /predict \u2192 200 (3658ms)"}
+{"ts": "2026-04-20T06:35:38.307101+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /drugs \u2192 200 (4ms)"}
+{"ts": "2026-04-20T06:35:38.309101+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /foods \u2192 200 (5ms)"}
+{"ts": "2026-04-20T06:35:38.320107+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /drugs \u2192 200 (6ms)"}
+{"ts": "2026-04-20T06:35:38.323105+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /foods \u2192 200 (7ms)"}
+{"ts": "2026-04-20T06:35:51.870563+00:00", "level": "INFO", "logger": "molguard.api", "message": "OPTIONS /predict \u2192 200 (0ms)"}
+{"ts": "2026-04-20T06:35:51.940134+00:00", "level": "INFO", "logger": "molguard.audit", "message": "PREDICT | UNSAFE | risk=Critical | prob=0.800 | MAOIs (Phenelzine) + Avocado | 64ms", "drug": "MAOIs (Phenelzine)", "food": "Avocado", "duration_ms": 64.1}
+{"ts": "2026-04-20T06:35:51.941634+00:00", "level": "INFO", "logger": "molguard.api", "message": "POST /predict \u2192 200 (67ms)"}
+{"ts": "2026-04-20T06:56:02.679855+00:00", "level": "INFO", "logger": "molguard.api", "message": "Starting MolGuard API v3..."}
+{"ts": "2026-04-20T06:56:25.498369+00:00", "level": "INFO", "logger": "molguard.api", "message": "Server ready | model_loaded=True"}
+{"ts": "2026-04-20T06:57:10.061172+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET / \u2192 404 (0ms)"}
+{"ts": "2026-04-20T06:57:10.225010+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /favicon.ico \u2192 404 (0ms)"}
+{"ts": "2026-04-20T06:57:21.798485+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /drugs \u2192 200 (19ms)"}
+{"ts": "2026-04-20T06:57:21.802431+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /foods \u2192 200 (19ms)"}
+{"ts": "2026-04-20T06:57:21.827797+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /drugs \u2192 200 (12ms)"}
+{"ts": "2026-04-20T06:57:21.833869+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /foods \u2192 200 (17ms)"}
+{"ts": "2026-04-20T06:57:41.662658+00:00", "level": "INFO", "logger": "molguard.api", "message": "OPTIONS /predict \u2192 200 (0ms)"}
+{"ts": "2026-04-20T06:57:41.973426+00:00", "level": "INFO", "logger": "molguard.audit", "message": "PREDICT | UNSAFE | risk=High | prob=0.800 | Tetracycline + Spinach | 302ms", "drug": "Tetracycline", "food": "Spinach", "duration_ms": 301.8}
+{"ts": "2026-04-20T06:57:41.976262+00:00", "level": "INFO", "logger": "molguard.api", "message": "POST /predict \u2192 200 (308ms)"}
+{"ts": "2026-04-20T06:58:15.402062+00:00", "level": "INFO", "logger": "molguard.api", "message": "'Paracetamol' not in dataset \u2014 querying PubChem"}
+{"ts": "2026-04-20T06:58:23.446245+00:00", "level": "INFO", "logger": "molguard.api", "message": "POST /predict \u2192 404 (8046ms)"}
+{"ts": "2026-04-20T06:58:41.038843+00:00", "level": "INFO", "logger": "molguard.audit", "message": "PREDICT | UNSAFE | risk=Unknown | prob=0.800 | Aspirin + Spinach | 124ms", "drug": "Aspirin", "food": "Spinach", "duration_ms": 124.3}
+{"ts": "2026-04-20T06:58:41.042872+00:00", "level": "INFO", "logger": "molguard.api", "message": "POST /predict \u2192 200 (129ms)"}
+{"ts": "2026-04-20T07:01:03.154826+00:00", "level": "INFO", "logger": "molguard.audit", "message": "PREDICT | UNSAFE | risk=High | prob=0.800 | Tetracycline + Spinach | 1ms", "drug": "Tetracycline", "food": "Spinach", "duration_ms": 0.5}
+{"ts": "2026-04-20T07:01:03.158829+00:00", "level": "INFO", "logger": "molguard.api", "message": "POST /predict \u2192 200 (4ms)"}
+{"ts": "2026-04-20T07:33:05.784285+00:00", "level": "INFO", "logger": "molguard.api", "message": "OPTIONS /predict/batch \u2192 200 (1ms)"}
+{"ts": "2026-04-20T07:33:05.796822+00:00", "level": "INFO", "logger": "molguard.api", "message": "'Empagliflozin' not in dataset \u2014 querying PubChem"}
+{"ts": "2026-04-20T07:33:06.888177+00:00", "level": "INFO", "logger": "molguard.audit", "message": "PREDICT | SAFE | risk=None | prob=0.150 | Digoxin + Licorice | 30ms", "drug": "Digoxin", "food": "Licorice", "duration_ms": 29.6}
+{"ts": "2026-04-20T07:33:07.890165+00:00", "level": "INFO", "logger": "molguard.audit", "message": "PREDICT | SAFE | risk=None | prob=0.150 | Empagliflozin + Coconut | 2094ms", "drug": "Empagliflozin", "food": "Coconut", "duration_ms": 2094.2}
+{"ts": "2026-04-20T07:33:07.895357+00:00", "level": "INFO", "logger": "molguard.api", "message": "POST /predict/batch \u2192 200 (2105ms)"}
+{"ts": "2026-04-20T07:36:37.250148+00:00", "level": "INFO", "logger": "molguard.api", "message": "OPTIONS /predict \u2192 200 (0ms)"}
+{"ts": "2026-04-20T07:36:37.258502+00:00", "level": "INFO", "logger": "molguard.audit", "message": "PREDICT | SAFE | risk=None | prob=0.150 | Digoxin + Licorice | 0ms", "drug": "Digoxin", "food": "Licorice", "duration_ms": 0.1}
+{"ts": "2026-04-20T07:36:37.263414+00:00", "level": "INFO", "logger": "molguard.api", "message": "POST /predict \u2192 200 (6ms)"}
+{"ts": "2026-04-20T08:23:15.827833+00:00", "level": "INFO", "logger": "molguard.api", "message": "Starting MolGuard API v3..."}
+{"ts": "2026-04-20T08:23:28.835813+00:00", "level": "INFO", "logger": "molguard.api", "message": "Server ready | model_loaded=True"}
+{"ts": "2026-04-20T08:23:50.959252+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET / \u2192 404 (1ms)"}
+{"ts": "2026-04-20T08:23:51.035265+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /favicon.ico \u2192 404 (1ms)"}
+{"ts": "2026-04-20T08:24:02.905600+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /drugs \u2192 200 (17ms)"}
+{"ts": "2026-04-20T08:24:02.909520+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /foods \u2192 200 (18ms)"}
+{"ts": "2026-04-20T08:24:02.923554+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /foods \u2192 200 (6ms)"}
+{"ts": "2026-04-20T08:24:02.927067+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /drugs \u2192 200 (11ms)"}
+{"ts": "2026-04-20T08:32:42.387992+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /drugs \u2192 200 (12ms)"}
+{"ts": "2026-04-20T08:32:42.394006+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /foods \u2192 200 (19ms)"}
+{"ts": "2026-04-20T08:32:42.413545+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /drugs \u2192 200 (7ms)"}
+{"ts": "2026-04-20T08:32:42.439089+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /foods \u2192 200 (25ms)"}
+{"ts": "2026-04-20T08:33:48.225514+00:00", "level": "INFO", "logger": "molguard.api", "message": "OPTIONS /predict \u2192 200 (0ms)"}
+{"ts": "2026-04-20T08:33:48.519196+00:00", "level": "INFO", "logger": "molguard.audit", "message": "PREDICT | UNSAFE | risk=Unknown | prob=0.800 | Warfarin + Spinach | 250ms", "drug": "Warfarin", "food": "Spinach", "duration_ms": 249.6}
+{"ts": "2026-04-20T08:33:48.561478+00:00", "level": "INFO", "logger": "molguard.api", "message": "POST /predict \u2192 200 (328ms)"}
+{"ts": "2026-04-20T08:34:38.714253+00:00", "level": "INFO", "logger": "molguard.api", "message": "OPTIONS /predict/batch \u2192 200 (0ms)"}
+{"ts": "2026-04-20T08:34:39.107532+00:00", "level": "INFO", "logger": "molguard.audit", "message": "PREDICT | SAFE | risk=None | prob=0.150 | Abiraterone + Abalone | 381ms", "drug": "Abiraterone", "food": "Abalone", "duration_ms": 381.1}
+{"ts": "2026-04-20T08:34:39.111056+00:00", "level": "INFO", "logger": "molguard.api", "message": "'paracetamol' not in dataset \u2014 querying PubChem"}
+{"ts": "2026-04-20T08:34:41.464717+00:00", "level": "INFO", "logger": "molguard.audit", "message": "PREDICT | SAFE | risk=None | prob=0.150 | paracetamol + water | 2355ms", "drug": "paracetamol", "food": "water", "duration_ms": 2354.8}
+{"ts": "2026-04-20T08:34:41.503720+00:00", "level": "INFO", "logger": "molguard.api", "message": "POST /predict/batch \u2192 200 (2784ms)"}
+{"ts": "2026-04-20T08:34:55.681394+00:00", "level": "INFO", "logger": "molguard.api", "message": "'Vitamin K' not in dataset \u2014 querying PubChem as food fallback"}
+{"ts": "2026-04-20T08:34:57.798603+00:00", "level": "INFO", "logger": "molguard.audit", "message": "PREDICT | SAFE | risk=None | prob=0.150 | Warfarin + Vitamin K | 2115ms", "drug": "Warfarin", "food": "Vitamin K", "duration_ms": 2115.3}
+{"ts": "2026-04-20T08:34:57.800600+00:00", "level": "INFO", "logger": "molguard.api", "message": "POST /predict/batch \u2192 200 (2120ms)"}
+{"ts": "2026-04-20T08:34:57.896248+00:00", "level": "INFO", "logger": "molguard.audit", "message": "PREDICT | SAFE | risk=None | prob=0.150 | Warfarin + Grapefruit | 84ms", "drug": "Warfarin", "food": "Grapefruit", "duration_ms": 84.5}
+{"ts": "2026-04-20T08:34:57.899243+00:00", "level": "INFO", "logger": "molguard.api", "message": "POST /predict \u2192 200 (89ms)"}
+{"ts": "2026-04-20T09:04:42.068037+00:00", "level": "INFO", "logger": "molguard.api", "message": "Starting MolGuard API v3..."}
+{"ts": "2026-04-20T09:05:02.943838+00:00", "level": "INFO", "logger": "molguard.api", "message": "Server ready | model_loaded=True"}
+{"ts": "2026-04-20T09:05:27.165946+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET / \u2192 404 (1ms)"}
+{"ts": "2026-04-20T09:05:27.250475+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /favicon.ico \u2192 404 (0ms)"}
+{"ts": "2026-04-20T09:05:38.343372+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /drugs \u2192 200 (17ms)"}
+{"ts": "2026-04-20T09:05:38.348439+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /foods \u2192 200 (18ms)"}
+{"ts": "2026-04-20T09:05:38.375967+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /drugs \u2192 200 (10ms)"}
+{"ts": "2026-04-20T09:05:38.384965+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /foods \u2192 200 (17ms)"}
+{"ts": "2026-04-20T09:05:56.938310+00:00", "level": "INFO", "logger": "molguard.api", "message": "OPTIONS /predict \u2192 200 (0ms)"}
+{"ts": "2026-04-20T09:05:56.950340+00:00", "level": "INFO", "logger": "molguard.api", "message": "'Paracetamol' not in dataset \u2014 querying PubChem"}
+{"ts": "2026-04-20T09:05:59.864760+00:00", "level": "INFO", "logger": "molguard.audit", "message": "PREDICT | SAFE | risk=None | prob=0.150 | Paracetamol + Water | 2915ms", "drug": "Paracetamol", "food": "Water", "duration_ms": 2915.1}
+{"ts": "2026-04-20T09:05:59.869746+00:00", "level": "INFO", "logger": "molguard.api", "message": "POST /predict \u2192 200 (2924ms)"}
+{"ts": "2026-04-20T09:45:39.597435+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /drugs \u2192 200 (9ms)"}
+{"ts": "2026-04-20T09:45:39.602694+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /foods \u2192 200 (14ms)"}
+{"ts": "2026-04-20T09:45:39.619287+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /foods \u2192 200 (7ms)"}
+{"ts": "2026-04-20T09:45:39.623283+00:00", "level": "INFO", "logger": "molguard.api", "message": "GET /drugs \u2192 200 (12ms)"}

@@ -32,7 +32,7 @@ def _resolve_dataset_dir() -> Path:
 
 DATASET_DIR = _resolve_dataset_dir()
 DRUG_CSV = DATASET_DIR / "S3.9292_drug_food_interactions.csv"
-FOOD_CSV = DATASET_DIR / "food_constituents_cleaned.csv"
+FOOD_CSV = DATASET_DIR / "food_constituents_smart.csv"
 
 
 class DataLoader:
